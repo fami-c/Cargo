@@ -5,7 +5,7 @@ This is a repository to storage my code wars solved problems, mostly using Rust 
 I forgot sometimes to add the readme for each snippet so can be bad to know each code without have to open the kata itself
 
 
-[My codewars profile](https://www.codewars.com/users/c-alloc)
+[My codewars profile](https://www.codewars.com/users/grin-malkin)
 
 #### Sources:
 
