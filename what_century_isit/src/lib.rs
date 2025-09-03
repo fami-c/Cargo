@@ -1,4 +1,4 @@
-fn what_century(year: &str) -> String {
+pub fn what_century(year: &str) -> String {
     let century = year.parse::<f32>().unwrap() / 100.0;
     let rounded = century.ceil() as i32;
 
@@ -9,7 +9,7 @@ fn what_century(year: &str) -> String {
         .collect::<Vec<u32>>();
 
     if vec[0] == 1 {
-        return format!("{}th", rounded)
+        return format!("{}th", rounded);
     }
     match vec[1] {
         1 => return format!("{}st", rounded),

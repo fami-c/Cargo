@@ -7,7 +7,6 @@ pub fn add(left: usize, right: usize) -> usize {
 #[cfg(test)] 
 mod tests {
     use super::*;
-
     #[test]
     fn sample_tests() {
         assert_eq!(solution::min_umbrellas(&["cloudy"]), 0);

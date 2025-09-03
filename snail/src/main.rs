@@ -51,20 +51,20 @@ impl Snail {
     }
 }
 
-fn snail(matrix: &[Vec<i32>]) -> Vec<i32> {
+pub fn snail(matrix: &[Vec<i32>]) -> Vec<i32> {
     //I prefer not to comment on how awful it is to manipulate a slice of VECTOR, well in a way works so its fine
 
     let col = matrix.len();
-    let row = if col != 0 { matrix.first().unwrap().len() } else { 0 };
+    let row = if col != 0 {
+        matrix.first().unwrap().len()
+    } else {
+        0
+    };
 
     let mut copy = vec![Vec::new(); col];
     copy.clone_from_slice(matrix);
 
     Snail::new(row, col).snail_that(&mut copy)
-}
-
-fn main() {
-    println!("Hello, world!");
 }
 
 #[cfg(test)]
